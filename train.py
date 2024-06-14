@@ -22,15 +22,15 @@ print()
 
 # Load Dataset
 train_data = object_detector.DataLoader.from_pascal_voc(
-    '/train',
-    '/train',
-    ['dermatitis', 'fine', 'flea_allergy', 'ringworm', 'scaboes']
+    'train',
+    'train',
+    ['dermatitis', 'fine', 'flea_allergy', 'ringworm', 'scabies']
 )
 
 val_data = object_detector.DataLoader.from_pascal_voc(
-    '/test',
-    '/test',
-    ['dermatitis', 'fine', 'flea_allergy', 'ringworm', 'scaboes']
+    'test',
+    'test',
+    ['dermatitis', 'fine', 'flea_allergy', 'ringworm', 'scabies']
 )
 
 # Load model spec
