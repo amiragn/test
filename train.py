@@ -22,14 +22,14 @@ print()
 
 # Load Dataset
 train_data = object_detector.DataLoader.from_pascal_voc(
-    'train',
-    'train',
+    'data/train',
+    'data/train',
     ['dermatitis', 'fine', 'flea_allergy', 'ringworm', 'scabies']
 )
 
 val_data = object_detector.DataLoader.from_pascal_voc(
-    'test',
-    'test',
+    'data/test',
+    'data/test',
     ['dermatitis', 'fine', 'flea_allergy', 'ringworm', 'scabies']
 )
 
